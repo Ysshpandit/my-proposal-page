@@ -12,19 +12,22 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            overflow: hidden;
         }
-        video {
-            width: 80%;
-            height: auto;
+        .video-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
         }
     </style>
 </head>
 <body>
 
-    <video id="proposalVideo" autoplay controls>
-        <source src="https://drive.google.com/uc?export=download&id=10RbuO-lsKEeDKwSiyh9iYe1_qI7Lv0Gd" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <iframe src="https://streamable.com/e/06ex2m" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 </body>
 </html>
